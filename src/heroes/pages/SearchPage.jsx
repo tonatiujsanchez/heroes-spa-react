@@ -12,7 +12,7 @@ const HeroesResult = ({ heroes, q }) => {
 
     return heroes.length === 0
         ? (
-            <div className="alert alert-danger animate__animated animate__fadeIn">
+            <div aria-label="alert-danger" className="alert alert-danger animate__animated animate__fadeIn">
                 No hero with <b>{q}</b>
             </div>
         ):(
@@ -54,7 +54,7 @@ export const SearchPage = () => {
                 <div className="col-5">
                     <h4>Searching</h4>
                     <hr />
-                    <form onSubmit={ handleSearchSubmit }>
+                    <form aria-label="form" onSubmit={ handleSearchSubmit }>
                         <input 
                             type="text" 
                             name="seachText" 
